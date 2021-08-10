@@ -54,3 +54,29 @@ npm install --save-dev webpack-cli@4.7.2
 npx webpack
 # 実行後はdistファイルが出来上がる
 ```
+
+8. webpackの設定ファイルを作る(webpack.config.js)
+```
+# エントリとあうとぷっとのpathを記載(絶対パスで指定する必要がある)
+// pathライブラリ
+const path = require('path')
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, './dist')//path.resolveで絶対パスを取得できる
+    }
+}
+```
+
+9. cssをモジュールとして読み込む(css-loader)
+```
+#最新版の確認
+npm view css-loader
+npm install --save-dev css-loader@6.2.0
+```
+
+9. style-loaderを読み込み
+```
+npm view style-loader
+npm install --save-dev style-loader@3.2.1
+```
