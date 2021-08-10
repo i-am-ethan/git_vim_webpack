@@ -53,3 +53,7 @@ git status
 # 詳細を知る(qで終わる)
 git diff README.md(知りたいファイル名)
 ```
+
+7. githubにアップしないファイルの設定
+- .git ignoreを作成する
+- アップしないファイル名を記述する
