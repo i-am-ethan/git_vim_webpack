@@ -118,3 +118,7 @@ url-loaderよりもfile-loaderが一般的
 npm view file-loader
 npm install --save-dev file-loader@6.2.0
 ```
+16. webpack5から使える画像loaderを使うこともできる。
+```
+npm uninstall file-loader url-loader
+```
