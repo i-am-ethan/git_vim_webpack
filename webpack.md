@@ -87,3 +87,8 @@ npm view mini-css-extract-plugin
 npm install --save-dev mini-css-extract-plugin@2.2.0
 ```
 
+11. htmlプラグインをインストール
+```
+npm view html-webpack-plugin
+npm install --save-dev html-webpack-plugin@5.3.2
+```
