@@ -11,7 +11,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),//path.resolveで絶対パスを取得できる
-        filename:'main.js',//アウトプットするfile名の変更
+        filename:'javascripts/main.js',//アウトプットするfile名の変更
     },
     module:{
         rules:[
@@ -30,7 +30,9 @@ module.exports = {
         ],
     },
     plugins:[
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: './stylesheets/my.css',
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
         }),

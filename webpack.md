@@ -99,3 +99,10 @@ distファイル内をクリーンアップするプラグイン
 npm view clean-webpack-plugin
 npm install --save-dev clean-webpack-plugin@4.0.0-alpha.0
 ```
+
+13. アウトプットcssの名前変更
+```
+new MiniCssExtractPlugin({
+            filename: 'my.css',
+        }),
+```
