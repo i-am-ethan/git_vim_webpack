@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/javascripts/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),//path.resolveで絶対パスを取得できる
         filename:'javascripts/main.js',//アウトプットするfile名の変更
@@ -31,10 +31,10 @@ module.exports = {
     },
     plugins:[
         new MiniCssExtractPlugin({
-            filename: './stylesheets/my.css',
+            filename: './stylesheets/main.css',
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './src/templates/index.html',
         }),
         new CleanWebpackPlugin(),
     ],

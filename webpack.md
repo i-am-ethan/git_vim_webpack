@@ -106,3 +106,5 @@ new MiniCssExtractPlugin({
             filename: 'my.css',
         }),
 ```
+
+14. distとsrcの中身を整える
