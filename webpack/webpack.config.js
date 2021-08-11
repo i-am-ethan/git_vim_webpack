@@ -1,5 +1,8 @@
 // pathライブラリ
 const path = require('path')
+// mini-css-extract-plugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -12,7 +15,8 @@ module.exports = {
                 test: /\.css/,//.cssファイルが見つかればuseを実行する(loaderを使用する)という意味
                 use:[
                     {
-                        loader: 'style-loader'//css-loaderが適用されたらstyle-loaderを処理する(※loaderは下から適用されていく)
+                        // loader: 'style-loader'//css-loaderが適用されたらstyle-loaderを処理する(※loaderは下から適用されていく)
+                        loader: MiniCssExtractPlugin.loader,
                     },
                     {
                         loader: 'css-loader',
@@ -21,4 +25,7 @@ module.exports = {
             },
         ],
     },
+    plugins:[
+        new MiniCssExtractPlugin(),
+    ],
 }

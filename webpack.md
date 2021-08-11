@@ -80,3 +80,10 @@ npm install --save-dev css-loader@6.2.0
 npm view style-loader
 npm install --save-dev style-loader@3.2.1
 ```
+
+10. cssプラグインをインストール
+```
+npm view mini-css-extract-plugin
+npm install --save-dev mini-css-extract-plugin@2.2.0
+```
+
