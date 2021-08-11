@@ -92,3 +92,10 @@ npm install --save-dev mini-css-extract-plugin@2.2.0
 npm view html-webpack-plugin
 npm install --save-dev html-webpack-plugin@5.3.2
 ```
+
+12. ファイル構成を考える
+distファイル内をクリーンアップするプラグイン
+```
+npm view clean-webpack-plugin
+npm install --save-dev clean-webpack-plugin@4.0.0-alpha.0
+```
