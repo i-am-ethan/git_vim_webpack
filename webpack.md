@@ -108,3 +108,13 @@ new MiniCssExtractPlugin({
 ```
 
 14. distとsrcの中身を整える
+
+15. 画像を配置する
+```
+npm view url-loader
+npm install --save-dev url-loader@4.1.1
+
+url-loaderよりもfile-loaderが一般的
+npm view file-loader
+npm install --save-dev file-loader@6.2.0
+```
